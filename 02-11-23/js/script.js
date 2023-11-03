@@ -4,14 +4,13 @@ function getTemperatureStatus(temperature) {
   if (temperature >= 25) return "calda";
   else if (temperature >= 15 && temperature < 25) return "mite";
   else if (temperature < 15) return "fredda";
-  else return "NaN";
 }
 
-const temperature = prompt("Inserisci una temperatura");
-const res = getTemperatureStatus(temperature);
+const temperature = parseInt(prompt("Inserisci una temperatura"));
 
-if (res !== "NaN") console.log("La temperatura è", res);
-else console.log(`${temperature} non è un valore valido`);
+if (temperature !== NaN)
+  console.log("La temperatura è", getTemperatureStatus(temperature));
+else console.log("Il valore inserito non è un numero!");
 
 /** END ESERSCIZIO 1 **/
 
