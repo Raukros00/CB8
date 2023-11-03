@@ -8,7 +8,7 @@ function getTemperatureStatus(temperature) {
 
 const temperature = parseInt(prompt("Inserisci una temperatura"));
 
-if (temperature !== NaN)
+if (temperature !== "NaN")
   console.log("La temperatura è", getTemperatureStatus(temperature));
 else console.log("Il valore inserito non è un numero!");
 
