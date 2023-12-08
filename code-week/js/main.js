@@ -126,7 +126,6 @@ setInterval(() => {
   heroTitle.textContent = movie.title;
 
   document.querySelectorAll(".slide-point").forEach((bullet) => {
-    console.log(bullet.id, currentIndex);
     if (bullet.id == currentIndex) bullet.classList.add("actual");
     else bullet.classList.remove("actual");
   });
