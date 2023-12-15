@@ -1,0 +1,24 @@
+.gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.gallery-wrapper {
+  width: 99%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  background-color: yellow;
+}
+
+.image {
+  flex: 22%;
+  max-width: 300px;
+  object-fit: cover;
+}
