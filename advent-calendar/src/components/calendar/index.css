@@ -1,0 +1,21 @@
+.Calendar {
+  width: 100%;
+  height: auto;
+  padding: 0rem 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.Calendar__wrapper {
+  width: 99%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Calendar__wrapper {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}

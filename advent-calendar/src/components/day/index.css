@@ -1,0 +1,172 @@
+.Day {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b8393a;
+  color: #f5eed8;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.Day__Open {
+  background-image: none !important;
+  background-color: #5e5555c0 !important;
+  color: #f5eed8 !important;
+}
+
+.Day:first-child,
+.Day:nth-child(19),
+.Day:nth-child(23) {
+  grid-column: span 2;
+}
+
+@media only screen and (min-width: 768px) {
+  .Day {
+    grid-column: span 1;
+  }
+
+  .Day:first-child,
+  .Day:nth-child(19),
+  .Day:nth-child(23) {
+    grid-column: span 1;
+  }
+}
+
+.Day:hover {
+  animation: rotate 4s ease-in-out;
+}
+
+.Today {
+  animation: rotate 4s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  2% {
+    transform: rotate(-10deg);
+  }
+
+  5% {
+    transform: rotate(10deg);
+  }
+
+  7% {
+    transform: rotate(-10deg);
+  }
+
+  10%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.Day__twoCol {
+  grid-column: span 2;
+}
+
+.Day__twoRow {
+  grid-row: span 2;
+}
+
+.Day__pattern--white {
+  background-color: #f5eed8;
+  background-image: url("../../../public/pattern2.png");
+  background-size: cover;
+  background-position: center;
+  color: #151515;
+}
+
+.Day__pattern--green {
+  background-color: #b8c7b1;
+  background-image: url("../../../public/pattern4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.Day__pattern--red {
+  background-image: url("../../../public/pattern3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.Day__pattern--gift {
+  background-color: #b8c7b1;
+  background-image: url("../../../public/pattern1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  color: #151515;
+}
+
+.Day__pattern--greenBall {
+  background-color: #f5eed8;
+  background-image: url("../../../public/greenBall.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  justify-content: flex-start;
+  color: #151515;
+}
+
+.Day__pattern--greenBall2 {
+  background-color: #f5eed8;
+  background-image: url("../../../public/greenBall2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  justify-content: flex-end;
+  color: #151515;
+}
+
+.Day__pattern--redBall {
+  background-color: #b8c7b1;
+  background-image: url("../../../public/redBall.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: flex-end;
+  background-position: calc(-10px);
+}
+
+.Day__pattern--yellowBall {
+  background-color: #b8c7b1;
+  background-image: url("../../../public/yellowBall.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  justify-content: flex-end;
+}
+
+.Day__pattern--greenBall3 {
+  background-color: #f5eed8;
+  background-image: url("../../../public/greenBall3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  justify-content: flex-end;
+  color: #151515;
+}
+
+.Day__pattern--tree {
+  background-color: #2f3029;
+  background-image: url("../../../public/tree.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #f5eed8;
+}
+
+.Day__pattern--snow {
+  background-color: #2f3029;
+  background-image: url("../../../public/snow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f5eed8;
+}
