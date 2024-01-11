@@ -1,0 +1,27 @@
+@import "../../assets/css/mixin.scss";
+
+.Hero {
+  @include container(100%, auto);
+
+  .Wrapper {
+    @include flex-container(flex, row, space-between, center, 1rem);
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 3rem 0rem;
+    color: #fff;
+  }
+
+  .Info {
+    @include flex-container(flex, column, center, flex-start);
+
+    p {
+      padding-top: 0;
+      color: #eee;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+}
