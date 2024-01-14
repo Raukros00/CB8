@@ -1,0 +1,62 @@
+@import "../../assets/css/mixin.scss";
+@import "../../assets/css/variables.scss";
+
+.Todo {
+  @include container(100%, auto);
+  @include flex-container(flex, row, space-between, center, 2rem);
+  padding: 1rem 2rem;
+
+  .TodoText {
+    @include container(100%, 100%);
+    @include flex-container(flex, row, flex-start, center, 2rem);
+
+    .TodoCheck {
+      appearance: none;
+      display: grid;
+      place-content: center;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      font: inherit;
+      color: currentColor;
+      min-width: 15px;
+      height: 15px;
+      border: 2px solid #bbb;
+      border-radius: 3px;
+
+      &:checked {
+        border-color: $primary-color;
+      }
+    }
+
+    .TextChecked {
+      color: #bbb;
+      text-decoration: line-through;
+    }
+
+    .TodoCheck::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+    }
+
+    .TodoCheck:checked::before {
+      background-color: $primary-color;
+      transform: scale(1);
+    }
+
+    .ChangeTodo {
+      outline: none;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      padding: 5px;
+      width: 100%;
+    }
+  }
+
+  .TodoDelete {
+    color: #ff7a7a;
+  }
+}
