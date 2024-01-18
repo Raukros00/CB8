@@ -1,0 +1,14 @@
+@import "../../assets/css/mixin.scss";
+
+.Categories {
+  @include flex-container(flex, row, flex-start, center, 1rem);
+  padding: 1rem;
+
+  .SelectCategories {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #000;
+    border: 0;
+    color: #fff;
+  }
+}

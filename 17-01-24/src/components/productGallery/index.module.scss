@@ -1,0 +1,33 @@
+@import "../../assets/css/mixin.scss";
+
+.Gallery {
+  @include container(50%, 100%);
+  @include flex-container(flex, column, space-between, flex-start);
+
+  .MainImage {
+    @include container(100%, 100%);
+  }
+
+  .MainImage img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .GalleryImage {
+    @include container();
+    @include flex-container(flex, row, flex-start, center, 20px);
+  }
+
+  .GalleryImage img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+  }
+
+  .GalleryImage img:hover {
+    transform: translate(-0.2rem, -0.2rem);
+  }
+}

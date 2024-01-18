@@ -1,0 +1,16 @@
+@import "../../assets/css/mixin.scss";
+
+.Info {
+  @include container(50%, 100%);
+  .Wrapper {
+    @include container(100%, 100%);
+    @include flex-container(flex, column, space-between, flex-start, 1rem);
+
+    .BuyBtn {
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}

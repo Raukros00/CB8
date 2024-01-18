@@ -1,0 +1,23 @@
+@import "../../assets/css/mixin.scss";
+
+.Products {
+  @include container();
+
+  .Wrapper {
+    @include container(80%, auto);
+    @include flex-container(flex, row, flex-start, center, 1rem);
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .ProductLink {
+      flex-basis: 100%;
+      text-decoration: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .ProductLink {
+        flex-basis: calc(33.333% - 11px);
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../assets/css/mixin.scss";
+
+.Product {
+  transition: all 0.3s ease-in-out;
+
+  .Wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .ProductImage {
+      @include container(100%, 200px);
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      object-fit: cover;
+    }
+
+    .Info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0.5rem;
+      color: #000;
+
+      .SpecialPrice {
+        margin-left: 10px;
+        color: #0bb519;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translate(-0.2rem, -0.2rem);
+  }
+}
