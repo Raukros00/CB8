@@ -1,0 +1,31 @@
+@import "../../assets/css/mixin.module.scss";
+
+.PrivacyArea {
+  @include container();
+  margin: 1rem 0;
+
+  .Wrapper {
+    @include container(90%, 100%);
+    @include flex-container(flex, column, flex-start, flex-start, 1rem);
+    margin: 0 auto;
+
+    .Title {
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #4d5d53;
+    }
+
+    .SpecialPolicy {
+      @include container(100%, 100%);
+      @include flex-container(flex, row, space-between, center, 1rem);
+
+      .SinglePolicy {
+        @include flex-container(flex, column, flex-start, center, 1rem);
+        flex-wrap: wrap;
+        background-color: #e3dac9;
+        color: #3b3c36;
+        padding: 1rem;
+      }
+    }
+  }
+}

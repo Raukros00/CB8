@@ -1,0 +1,28 @@
+.NavBar {
+  width: 100%;
+  height: auto;
+  background-color: #3b3c36;
+
+  .Wrapper {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Pages {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        color: #e3dac9;
+        text-decoration: none;
+        font-weight: 800;
+      }
+    }
+  }
+}

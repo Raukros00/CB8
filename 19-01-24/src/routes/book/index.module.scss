@@ -1,0 +1,31 @@
+.Book {
+  margin-top: 1rem;
+  width: 100%;
+
+  .Wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #3b3c36;
+
+    .BookImage {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .BtnRead {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 0;
+      background-color: #4d5d53;
+      color: #fff;
+      font-weight: 800;
+    }
+  }
+}
