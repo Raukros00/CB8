@@ -1,7 +1,7 @@
 @import "../../assets/css/mixin.scss";
 
 .TodoList {
-  @include container(100%, 100%);
+  @include container(100%, 85vh);
   background-color: #fff;
   border-top-left-radius: 30px;
 
