@@ -1,4 +1,4 @@
-import Day from "../Day";
+import Day from "../Day/";
 import "./index.css";
 
 const Calendar = ({ calendarData, setDayClick }) => {
