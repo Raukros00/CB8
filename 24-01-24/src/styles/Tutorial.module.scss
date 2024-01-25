@@ -1,0 +1,50 @@
+.Slider__container {
+  width: 100vw;
+  height: 90vh;
+
+  .Slider {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .AnimatedText {
+      opacity: 0;
+      animation: textShow 1s forwards;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @keyframes textShow {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .Arrow {
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .Last {
+    background-color: #67d87e;
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
