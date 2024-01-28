@@ -1,0 +1,24 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Divider {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.Page {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+.Page:hover {
+  color: rgb(149, 191, 255);
+}

@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+
+# Next.js
+.next/%   
+next.config.mjs
+
+jsconfig.json
+postcss.config.js
+tailwind.config.js
