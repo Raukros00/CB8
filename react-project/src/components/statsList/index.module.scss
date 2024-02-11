@@ -1,0 +1,14 @@
+.Stats {
+  list-style-type: none;
+
+  .Stat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px 0;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

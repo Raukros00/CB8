@@ -1,0 +1,31 @@
+@import "../../css/mixin.scss";
+
+.Card {
+  @include container(180px);
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  .BackCard {
+    @include container(100%, 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.3s ease-in;
+  }
+
+  .Char {
+    @include container(100%, 100%);
+    @include flex-container(flex, row, center, center);
+    position: relative;
+    z-index: 3;
+    img {
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
