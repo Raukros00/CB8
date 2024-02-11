@@ -1,0 +1,8 @@
+@import "../css/mixin.scss";
+
+.Container {
+  @include container(100%, 100%);
+  @include flex-container(flex, column, flex-start, flex-start);
+  gap: 1rem;
+  padding: 1rem;
+}

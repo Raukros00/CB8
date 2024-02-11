@@ -1,0 +1,53 @@
+@import "../../css/mixin.scss";
+
+.Container {
+  @include container(100%, 100%);
+  @include flex-container(flex, column, center, center);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 999;
+
+  .Popup {
+    @include container(60%);
+    @include flex-container(flex, column, center, center, 1rem);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #000;
+    font-size: 1rem;
+    background-color: white;
+
+    .Buttons {
+      @include container(100%);
+      @include flex-container(flex, row, center, stretch, 1rem);
+
+      .Confirm {
+        padding: 5px 10px;
+        border: 2px solid #000;
+        border-radius: 8px;
+        font-weight: 700;
+        background-color: transparent;
+      }
+
+      .Confirm:active {
+        background-color: #000;
+        color: white;
+      }
+
+      .Cancel {
+        padding: 5px 10px;
+        border: 0;
+        border-radius: 8px;
+        border: 2px solid #999;
+        color: #999;
+        font-weight: 700;
+        background-color: transparent;
+      }
+
+      .Cancel:active {
+        background-color: #999;
+        color: white;
+      }
+    }
+  }
+}

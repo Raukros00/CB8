@@ -1,0 +1,19 @@
+@import "../../css/mixin.scss";
+
+.MainLayout {
+  position: relative;
+  @include container(100%, 100%);
+  @include flex-container(flex, column, center, center);
+
+  .Logo {
+    top: 20px;
+    position: absolute;
+    width: 100px;
+    height: auto;
+  }
+
+  .Children {
+    @include container(100%, 100%);
+    position: relative;
+  }
+}
