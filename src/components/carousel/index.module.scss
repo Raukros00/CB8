@@ -1,0 +1,7 @@
+@import "../../css/mixin.scss";
+
+.PokemonCarousel {
+  @include container(100%);
+  @include flex-container(flex, row, flex-start, center, 10px);
+  overflow-x: auto;
+}

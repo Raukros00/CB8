@@ -1,0 +1,94 @@
+@import "../css/mixin.scss";
+
+.NewPlayer {
+  @include container(100%, 100%);
+  @include flex-container(flex, column, center, center);
+}
+
+.UsernameSection {
+  @include container(90%);
+  margin: 0 auto;
+  animation: 0.8s ease 0s 1 normal none running fade;
+}
+
+.UsernameForm {
+  @include container(100%);
+  @include flex-container(flex, column, flex-start, center, 1rem);
+
+  .TextInput {
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #b2beff27;
+  }
+}
+
+.Submit {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  background-color: #ee8328;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #b7661f;
+  }
+}
+
+.Characters {
+  @include container(90%);
+  @include flex-container(flex, column, center, flex-start, 1rem);
+  margin: 0 auto;
+  animation: 0.8s ease 0s 1 normal none running fade;
+}
+
+.Cards {
+  @include container(100%);
+  @include flex-container(flex, row, flex-start, stretch, 10px);
+}
+
+@media only screen and (min-width: 768px) {
+  .Characters {
+    width: 50%;
+    font-size: 2rem;
+  }
+
+  .Cards {
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .UsernameSection {
+    max-width: 1440px;
+    justify-content: center;
+    font-size: 2rem;
+
+    .TextInput {
+      padding: 25px 15px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .Submit {
+    padding: 25px 15px;
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, -32px, 0px);
+  }
+
+  100% {
+    opacity: initial;
+    transform: initial;
+  }
+}

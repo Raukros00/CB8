@@ -1,0 +1,16 @@
+@import "../../css/mixin.scss";
+
+.PokemonList {
+  @include container(90%);
+
+  .list {
+    @include flex-container(flex, row, center, flex-start, 10px);
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .list {
+      justify-content: flex-start;
+    }
+  }
+}

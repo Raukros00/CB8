@@ -1,0 +1,35 @@
+@import "../../css/mixin.scss";
+
+.Types {
+  @include container(100%);
+  @include flex-container(flex, row, flex-start, flex-start, 5px);
+  margin-top: 10px;
+}
+
+.Tag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 6px;
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+
+  .Icon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Types {
+    justify-content: center;
+  }
+
+  .Tag {
+    padding: 10px 12px;
+  }
+}
