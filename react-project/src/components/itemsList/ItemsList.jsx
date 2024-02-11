@@ -11,7 +11,7 @@ const ItemsList = ({ items, handleClick }) => {
             onClick={() => handleClick(items.sprites.default)}
             key={keys}
           >
-            <Image src={items.sprites.default} width={50} height={50} />
+            <Image className={styles.item} src={items.sprites.default} width={50} height={50} />
           </button>
         ))}
     </div>
