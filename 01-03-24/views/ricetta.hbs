@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../recipe_page.css" />
+    <title>{{ricetta.name}}</title>
+  </head>
+  <body>
+    <div class="Recipe">
+      <div class="Recipe__img">
+        <img src="{{ricetta.image}}" alt="" />
+      </div>
+      <div class="Recipe__body">
+        <h3>Ingredienti</h3>
+        <ul>
+          {{#each ricetta.ingredients}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+
+        <h3>Procedimento</h3>
+        <ol>
+          {{#each ricetta.instructions}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ol>
+
+        <a class="Recipe__btn" href="/">Indietro</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+
+    <div class="Header">
+      <ul class="Navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="/Italian">Ricette Italiane</a></li>
+        <li><a href="/Asian">Ricette Asiatica</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="Recipe__box">
+      {{#each recipes}}
+        <div class="Recipe">
+          <div class="Recipe__img">
+            <img src="{{this.image}}" alt="" />
+          </div>
+          <div class="Recipe__text">
+            <h3>{{this.name}} ({{this.difficulty}})</h3>
+            <a class="Recipe__read" href="/ricetta/{{this.id}}">Leggi ricetta</a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+  </body>
+</html>

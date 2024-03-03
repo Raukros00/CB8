@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="Login__box">
+      <div class="Login__wrapper">
+        <h1>Accedi</h1>
+        <p>mario.rossi | pass123</p>
+        <form action="/login" method="POST">
+
+          <div class="Input__area">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="mario.rossi"
+            />
+          </div>
+          <div class="Input__area">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+          </div>
+
+          <div class="Input__area">
+            <input type="submit" value="Accedi" />
+          </div>
+
+          {{#if error}}
+            <p class="Error">{{error}}</p>
+          {{/if}}
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>
