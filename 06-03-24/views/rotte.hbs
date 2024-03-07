@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Menu</h1>
+    <ul>
+      <li><a href="/">Tutti i prodotti</a></li>
+      <li><a href="/uomo">Uomo</a></li>
+      <li><a href="/donna">Donna</a></li>
+      <li><a href="/bambino">Bambino</a></li>
+      <li><a href="/rotteJson">Altre rotte</a></li>
+    </ul>
+    <hr />
+    <h1>Descrizione rotte api</h1>
+    <ul>
+      <li>
+        <h4>GET:<em> /api/products</em></h4>
+        <p>Restituisce il json di tutti i prodotti.</p>
+        <a href="/api/products">ESEMPIO</a>
+      </li>
+      <li>
+        <h4>GET:<em> /api/search?name=&department=</em></h4>
+        <p>Chiamata GET che permette di filtrare i prodotti, è possibile fare
+          una ricerca per nome del prodotto e reparto, i due parametri
+          funzionano anche in combinazione.</p>
+        <a href="/api/products/search?name=giacca&department=uomo">ESEMPIO</a>
+      </li>
+      <li>
+        <h4>GET: <em> /api/search/:productID</em></h4>
+        <p>Chiamata get che permette tramite productID di recuperare il singolo
+          prodotto</p>
+        <a href="/api/products/search/3">ESEMPIO</a>
+      </li>
+    </ul>
+  </body>
+</html>

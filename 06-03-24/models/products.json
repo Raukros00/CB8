@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "nome": "Maglione invernale",
+    "tipo": "Uomo",
+    "taglia": "L",
+    "prezzo": 49.99
+  },
+  {
+    "id": 2,
+    "nome": "Camicia a righe",
+    "tipo": "Uomo",
+    "taglia": "M",
+    "prezzo": 29.99
+  },
+  {
+    "id": 3,
+    "nome": "Jeans slim fit",
+    "tipo": "Uomo",
+    "taglia": "32",
+    "prezzo": 39.99
+  },
+  {
+    "id": 4,
+    "nome": "Giacca in pelle",
+    "tipo": "Uomo",
+    "taglia": "XL",
+    "prezzo": 79.99
+  },
+  {
+    "id": 5,
+    "nome": "Vestito elegante",
+    "tipo": "Donna",
+    "taglia": "S",
+    "prezzo": 59.99
+  },
+  {
+    "id": 6,
+    "nome": "Maglia a collo alto",
+    "tipo": "Donna",
+    "taglia": "M",
+    "prezzo": 34.99
+  },
+  {
+    "id": 7,
+    "nome": "Gonna plissettata",
+    "tipo": "Donna",
+    "taglia": "L",
+    "prezzo": 44.99
+  },
+  {
+    "id": 8,
+    "nome": "Cappotto lungo",
+    "tipo": "Donna",
+    "taglia": "XS",
+    "prezzo": 89.99
+  },
+  {
+    "id": 9,
+    "nome": "Tuta sportiva",
+    "tipo": "Bambino",
+    "taglia": "4 anni",
+    "prezzo": 24.99
+  },
+  {
+    "id": 10,
+    "nome": "Pigiama con stampa",
+    "tipo": "Bambino",
+    "taglia": "6 anni",
+    "prezzo": 19.99
+  },
+  {
+    "id": 11,
+    "nome": "Scarpe da ginnastica",
+    "tipo": "Bambino",
+    "taglia": "12",
+    "prezzo": 29.99
+  },
+  {
+    "id": 12,
+    "nome": "Cappello invernale",
+    "tipo": "Uomo",
+    "taglia": "Unica",
+    "prezzo": 14.99
+  },
+  {
+    "id": 13,
+    "nome": "Borsa a tracolla",
+    "tipo": "Donna",
+    "taglia": "Unica",
+    "prezzo": 39.99
+  },
+  {
+    "id": 14,
+    "nome": "Calze colorate",
+    "tipo": "Bambino",
+    "taglia": "8 anni",
+    "prezzo": 9.99
+  },
+  {
+    "id": 15,
+    "nome": "Giacca a vento",
+    "tipo": "Uomo",
+    "taglia": "M",
+    "prezzo": 54.99
+  },
+  {
+    "id": 16,
+    "nome": "Cappotto elegante",
+    "tipo": "Donna",
+    "taglia": "L",
+    "prezzo": 69.99
+  },
+  {
+    "id": 17,
+    "nome": "Pantaloni cargo",
+    "tipo": "Uomo",
+    "taglia": "34",
+    "prezzo": 49.99
+  },
+  {
+    "id": 18,
+    "nome": "Sciarpa in lana",
+    "tipo": "Donna",
+    "taglia": "Unica",
+    "prezzo": 19.99
+  },
+  {
+    "id": 19,
+    "nome": "Pigiama a due pezzi",
+    "tipo": "Bambino",
+    "taglia": "10 anni",
+    "prezzo": 29.99
+  },
+  {
+    "id": 20,
+    "nome": "Stivali invernali",
+    "tipo": "Uomo",
+    "taglia": "42",
+    "prezzo": 74.99
+  },
+  {
+    "id": 21,
+    "nome": "Vestito da sera",
+    "tipo": "Donna",
+    "taglia": "S",
+    "prezzo": 89.99
+  },
+  {
+    "id": 22,
+    "nome": "Jeans elasticizzati",
+    "tipo": "Uomo",
+    "taglia": "30",
+    "prezzo": 36.99
+  },
+  {
+    "id": 23,
+    "nome": "Giacca di jeans",
+    "tipo": "Bambino",
+    "taglia": "8 anni",
+    "prezzo": 45.99
+  },
+  {
+    "id": 24,
+    "nome": "Cappello di lana",
+    "tipo": "Uomo",
+    "taglia": "Unica",
+    "prezzo": 19.99
+  },
+  {
+    "id": 25,
+    "nome": "Borsa shopper",
+    "tipo": "Donna",
+    "taglia": "Unica",
+    "prezzo": 29.99
+  },
+  {
+    "id": 26,
+    "nome": "Felpa con cappuccio",
+    "tipo": "Bambino",
+    "taglia": "12 anni",
+    "prezzo": 34.99
+  },
+  {
+    "id": 27,
+    "nome": "Giacca a piumino",
+    "tipo": "Uomo",
+    "taglia": "L",
+    "prezzo": 99.99
+  },
+  {
+    "id": 28,
+    "nome": "Abito da cocktail",
+    "tipo": "Donna",
+    "taglia": "M",
+    "prezzo": 79.99
+  },
+  {
+    "id": 29,
+    "nome": "Pantaloni alla moda",
+    "tipo": "Bambino",
+    "taglia": "6 anni",
+    "prezzo": 29.99
+  },
+  {
+    "id": 30,
+    "nome": "Piumino leggero",
+    "tipo": "Uomo",
+    "taglia": "XL",
+    "prezzo": 64.99
+  }
+]

@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodotti</title>
+  </head>
+  <body>
+
+    <h1>Menu</h1>
+    <ul>
+      <li><a href="/">Tutti i prodotti</a></li>
+      <li><a href="/uomo">Uomo</a></li>
+      <li><a href="/donna">Donna</a></li>
+      <li><a href="/bambino">Bambino</a></li>
+      <li><a href="/rotteJson">Altre rotte</a></li>
+    </ul>
+    <hr />
+    <ul>
+      {{#each products}}
+        <li>
+          <h4>{{this.nome}}</h4>
+          <ul>
+            <li>Reparto: {{this.tipo}}</li>
+            <li>Taglia: {{this.taglia}}</li>
+            <li>Prezzo: €{{this.prezzo}}</li>
+          </ul>
+        </li>
+      {{/each}}
+    </ul>
+
+  </body>
+</html>
